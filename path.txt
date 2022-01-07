@@ -1,0 +1,49 @@
+Action                              	URI + Data (XML hoặc JSON)
+
+
+Create
+(@POST)
+                                          /contextPath/servletPath/Student
+
+		                                   {
+											"StudNo":"S04",
+											"StudName":"Ketan",
+											"StudDOB":"12-05-2010"
+											"StudDOJ":"16-08-2013"
+											}
+
+											<Student>
+											  <StudNo>S04</StudNo>
+											  <StudName>Kartik</StudName>
+											  <StudDOB>12-05-2010</StudDOB>
+											  <StudDOJ>16-08-2013</StudDOJ>
+											</Student>
+ 
+Read
+(@GET)
+										/contextPath/servletPath/Student
+
+										/contextPath/servletPath/Student/{StudNo}
+
+
+
+Update
+(@PUT)	                               /contextPath/servletPath/Student
+
+										{
+										"StudNo":"S01",
+										"StudName":"Anuja 2",
+										"StudDOB":"05-08-1999"
+										"StudDOJ":"06-05-2002"
+										}
+
+										<Student>
+										  <StudNo>S01</StudNo>
+										  <StudName>Anuja 2</empName>
+										  <StudDOB>05-08-1999</StudDOB>
+										  <StudDOJ>06-05-2002</StudDOJ>
+										</Student>
+										 
+Delete
+(@DELETE)
+										/contextPath/servletPath/Student/{StudNo}
